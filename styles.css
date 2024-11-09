@@ -1,153 +1,103 @@
 /* General Reset */
-
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
 }
- 
+
 body {
-
     font-family: Arial, sans-serif;
-
     line-height: 1.6;
-
     background-color: #f4f4f4;
-
 }
- 
+
 .container {
-
     width: 80%;
-
     margin: 0 auto;
-
 }
- 
+
 header {
-
     background: #ec407a;
-
     color: #fff;
-
     padding: 20px 0;
-
     text-align: center;
-
 }
- 
+
 header h1 {
-
     font-size: 2.5em;
-
 }
- 
+
 header p {
-
     font-size: 1.2em;
-
 }
- 
+
 section {
-
     padding: 20px 0;
-
 }
- 
+
 h2 {
-
     font-size: 2em;
-
     margin-bottom: 20px;
-
 }
- 
+
 .profile {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
 }
- 
+
 .profile-img {
-
-    border-radius: 50%;
-
+    width: 180px; /* เพิ่มขนาดให้รูปใหญ่ขึ้น */
+    height: 180px;
+    object-fit: cover; /* รูปจะถูกครอบกรอบโดยไม่เสียสัดส่วน */
     margin-right: 20px;
-
-    width: 120px;
-
-    height: 120px;
-
+    border-radius: 15px; /* เพิ่มมุมโค้งมน */
+    border: 4px solid #fff; /* เพิ่มขอบขาวรอบรูป */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* เพิ่มเงารอบรูป */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* เพิ่ม transition effect */
 }
- 
+
+/* เอฟเฟกต์เมื่อ hover รูป */
+.profile-img:hover {
+    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อยเมื่อ hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* เพิ่มเงาให้ชัดขึ้นเมื่อ hover */
+}
+
 ul {
-
     list-style-type: none;
-
 }
- 
+
 ul li {
-
     padding: 10px 0;
-
     font-size: 1.1em;
-
 }
- 
+
 ul li a {
-
-    color:#c41411;
-
+    color: #c41411;
     text-decoration: none;
-
 }
- 
+
 ul li a:hover {
-
     text-decoration: underline;
-
 }
- 
+
 footer {
-
     background: #ec407a;
-
     color: #fff;
-
     padding: 20px 0;
-
     text-align: center;
-
 }
- 
+
 footer .social-links {
-
     margin-top: 10px;
-
 }
- 
+
 footer .social-links a {
-
     color: #fff;
-
     margin: 0 10px;
-
     text-decoration: none;
-
 }
- 
+
 footer .social-links a:hover {
-
     text-decoration: underline;
-
 }
-
- 
