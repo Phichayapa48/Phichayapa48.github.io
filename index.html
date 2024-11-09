@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เว็บไซต์ของฉัน</title>
+<title>PHICHY!</title>
 
-<!-- เพิ่มลิงก์ไปยัง Font Awesome สำหรับใช้ไอคอน -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 <style>
-    /* การตั้งค่าเริ่มต้น */
     * {
         margin: 0;
         padding: 0;
@@ -18,30 +16,29 @@
 
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #6A82FB, #FC5C7D); /* พื้นหลังที่มีมิติ */
+        background: linear-gradient(135deg, #6A82FB, #FC5C7D); 
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         text-align: center;
-        overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+        overflow: hidden; 
     }
 
     .container {
         position: relative;
-        background-color: rgba(255, 255, 255, 0.9); /* พื้นหลังโปร่งแสง */
+        background-color: rgba(255, 255, 255, 0.9); 
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
         width: 100%;
-        max-width: 700px;
-        backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอพื้นหลัง */
+        max-width: 600px;
+        backdrop-filter: blur(10px); 
         z-index: 1;
-        animation: fadeIn 2s ease-out; /* การเคลื่อนไหวเมื่อเข้ามา */
+        animation: fadeIn 2s ease-out; 
     }
 
-    /* การแอนิเมชั่นให้คอนเทนเนอร์ค่อยๆ ปรากฏ */
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -57,9 +54,9 @@
         font-size: 3em;
         color: #333;
         margin-bottom: 20px;
-        text-transform: uppercase; /* ตัวอักษรเป็นตัวพิมพ์ใหญ่ */
+        text-transform: uppercase; 
         font-weight: bold;
-        animation: slideIn 1s ease-out; /* การเคลื่อนไหวให้หัวข้อเลื่อนเข้ามา */
+        animation: slideIn 1s ease-out; 
     }
 
     @keyframes slideIn {
@@ -78,7 +75,7 @@
         color: #555;
         margin-bottom: 30px;
         line-height: 1.6;
-        animation: fadeInText 2s ease-in-out; /* ข้อความจะค่อยๆ ปรากฏ */
+        animation: fadeInText 2s ease-in-out; 
     }
 
     @keyframes fadeInText {
@@ -102,7 +99,7 @@
     }
 
     .profile img:hover {
-        transform: scale(1.1); /* ขยายภาพเมื่อโฮเวอร์ */
+        transform: scale(1.1); 
     }
 
     .button {
@@ -127,7 +124,6 @@
         transform: translateY(2px);
     }
 
-    /* พื้นหลังกราฟิกเคลื่อนไหว */
     .background-animation {
         position: absolute;
         top: 0;
@@ -135,7 +131,7 @@
         width: 100%;
         height: 100%;
         background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png') repeat;
-        animation: moveBackground 20s linear infinite; /* การเคลื่อนไหวของพื้นหลัง */
+        animation: moveBackground 20s linear infinite; 
         z-index: 0;
     }
 
@@ -198,7 +194,7 @@
 </head>
 <body>
 
-    <div class="background-animation"></div> <!-- พื้นหลังเคลื่อนไหว -->
+    <div class="background-animation"></div> 
     <div class="container">
         <h1>Welcome to My Website!</h1>
         <div class="profile">
@@ -207,7 +203,6 @@
         <p> นี่คือเว็ปไซต์ของพิชญาภา ที่ใช้แนะนำตัวและแสดงผลงานต่างๆ หากคุณสนใจสามารถกดปุ่มด้านล่างเพื่อดู Portfolio ของฉัน!💻</p>
         <a href="[ลิงก์ Portfolio ของคุณ]" class="button">ดู Portfolio</a>
 
-        <!-- ข้อมูลติดต่อ -->
         <div class="contact-info">
             <p>คุณสามารถติดต่อฉันได้ที่:</p>
             <a href="mailto:66020936@up.ac.th" title="Email"><i class="fas fa-envelope"></i></a>
