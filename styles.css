@@ -47,20 +47,19 @@ h2 {
 }
 
 .profile-img {
-    width: 180px; /* เพิ่มขนาดให้รูปใหญ่ขึ้น */
+    width: 180px; 
     height: 180px;
-    object-fit: cover; /* รูปจะถูกครอบกรอบโดยไม่เสียสัดส่วน */
+    object-fit: cover;
     margin-right: 20px;
-    border-radius: 15px; /* เพิ่มมุมโค้งมน */
-    border: 4px solid #fff; /* เพิ่มขอบขาวรอบรูป */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* เพิ่มเงารอบรูป */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* เพิ่ม transition effect */
+    border-radius: 15px; 
+    border: 4px solid #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* เอฟเฟกต์เมื่อ hover รูป */
 .profile-img:hover {
-    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อยเมื่อ hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* เพิ่มเงาให้ชัดขึ้นเมื่อ hover */
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); 
 }
 
 ul {
